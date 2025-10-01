@@ -1,11 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Sportolo";
+    ViewData["BodyClass"] = "sportolo-body";
+
 }
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-<h2>A sportolók:</h2>
+<h2 class="titleH2 fw-bold">A sportolók:</h2>
+<hr class="HrLine">
 
 <div class="container">
     <div class="row">
@@ -24,10 +27,10 @@
                     }
                     <img src="@(imgSrc ?? Url.Content("~/images/placeholder.jpg"))" class="card-img-top" alt="sportoló képe">
                     <div class="card-body">
-                        <h5 class="card-title">@sportolo.Name</h5>
+                        <h5 class="card-title fw-bold text-muted">@sportolo.Name</h5>
                         <p class="card-text">
-                            Születési éve: @sportolo.DateOfBirth.ToString("yyyy-MM-dd") <br>
-                            Versenyszámai: @sportolo.CompetitionNumbers
+                            <span class="highlighter fw-bold text-decoration-underline">Születési éve:</span> <span class="text-white fw-bold">@sportolo.DateOfBirth.ToString("yyyy-MM-dd")<span /> <br>
+                            <span class="highlighter fw-bold text-decoration-underline">Versenyszámai:</span> <span class="text-white fw-bold">@sportolo.CompetitionNumbers</span>
                         </p>
                     </div>
                 </div>

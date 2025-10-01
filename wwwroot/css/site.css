@@ -1,4 +1,4 @@
-html {
+﻿html {
   font-size: 14px;
 }
 
@@ -15,8 +15,94 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  color: white !important;
 }
 
 body {
   margin-bottom: 60px;
+}
+
+*{
+        box-sizing: border-box;
+}
+
+.navbar.bdb {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
+    background-clip: padding-box;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.sportolo-body, .home-body, .privacy-body {
+    background: #101a16;
+    background: linear-gradient(90deg, rgba(16, 26, 22, 1) 21%, rgba(122, 29, 29, 1) 77%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.titleH2 {
+    text-align: center;
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    color: rgba(0,0,0,0.85);
+    transition: background-color 0.12s ease, color 0.12s ease, transform 0.08s ease;
+    padding: 0.4rem 0.6rem;
+}
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus {
+        background-color: rgba(0,0,0,0.06);
+        color: white !important;
+        border-radius: 4px;
+        transform: translateY(-1px);
+        text-decoration: underline;
+        transition: all 0.5s ease;
+    }
+
+.navbar .navbar-brand {
+    color: darkgoldenrod;
+    font-weight: 800;
+}
+
+.HrLine {
+    height: 4px !important;
+    border: none;
+    background-color: darkgoldenrod;
+}
+
+.card-img-top {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.card img
+{
+    top: 50px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.52);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.52);
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.highlighter {
+    color: darkgoldenrod !important;
 }
